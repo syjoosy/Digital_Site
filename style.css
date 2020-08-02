@@ -102,6 +102,7 @@ header > div {
 .service-images {
     display: -webkit-inline-flex;
     display: inline-flex;
+    flex-flow: row wrap;
     margin-left: 50px;
     padding: 20px;
     vertical-align: top;
@@ -120,7 +121,13 @@ header > div {
 .service-images > div > p {
 
 }
-.service-images > div > a {
+.back {
+    padding: 15px;
+    background: #fbfbfb;
+    height: 110px;
+}
+
+.back > a {
     color: #2bc6d8;
     border: 2px solid #2bc6d8;
     border-radius: 20px;
@@ -130,6 +137,17 @@ header > div {
 .service-images > div > a:hover {
     background: #2bc6d8;
     color: white;
+}
+
+.simage > img {
+    border-radius: 10px 10px 0 0;
+}
+
+.simage {
+   /* border: 1px solid black;
+    border-radius: 15px;
+    padding: 17px;
+    height: 370px;*/
 }
 
 .simage-name {
@@ -146,4 +164,36 @@ header > div {
 body {
     background: #e6e6e6;
     background: #e7eaf2;
+}
+
+.forma {
+    margin: 50px 0 0 200px;
+}
+
+.name {
+    font-size: 25px;
+}
+
+/*.forma > input {
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px 30px 0 0;
+}*/
+
+.forma > .soc > div {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid silver;
+  cursor: pointer;
+  color: #3b3b3b;
+  transition: transform 600ms ease;
+}
+
+.soc div:hover {
+  transform: translateY(-10px);
 }
