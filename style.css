@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 header {
@@ -53,6 +54,17 @@ header > div {
     display: inline-block;
 }
 
+
+#iso:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+#iso:not(:hover) {
+    transform: scale(1);
+    transition: .5s;
+}
+
 .logo-bottom-p {
     font-weight: 300;
     margin: 100px 0 10px 200px;
@@ -85,13 +97,28 @@ header > div {
 }
 
 #calc:hover {
+    transition-duration: .5s;
     background: white;
     color: #2bc6d8;
 }
 
-#help:hover {
+
+#calc:not(:hover) {
+    transition-duration: .5s;
     background: #2bc6d8;
     color: white;
+}
+
+#help:hover {
+    transition-duration: .5s;
+    background: #2bc6d8;
+    color: white;
+}
+
+#help:not(:hover) {
+    transition-duration: .5s;
+    background: white;
+    color: #2bc6d8;
 }
 
 .service-text {
@@ -125,6 +152,7 @@ header > div {
     padding: 15px;
     background: #fbfbfb;
     height: 110px;
+    border-radius: 0 0 10px 10px;
 }
 
 .back > a {
@@ -134,20 +162,21 @@ header > div {
     text-decoration: none;
     padding: 10px;
 }
-.service-images > div > a:hover {
+
+.back > a:hover {
+    transition-duration: .5s;
     background: #2bc6d8;
     color: white;
 }
 
-.simage > img {
-    border-radius: 10px 10px 0 0;
+.back > a:not(:hover) {
+    transition-duration: .5s;
+    background: white;
+    color: #2bc6d8;
 }
 
-.simage {
-   /* border: 1px solid black;
-    border-radius: 15px;
-    padding: 17px;
-    height: 370px;*/
+.simage > img {
+    border-radius: 10px 10px 0 0;
 }
 
 .simage-name {
