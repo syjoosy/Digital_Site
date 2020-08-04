@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
-	
+	<script src="code.js"></script>
 </head>
 <body>
 	<header>
@@ -22,8 +22,16 @@
 			<a href="#" style="color: #2bc6d8; font-weight: 400;">ru</a>
 		</div>
 	</header>
+	<div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-es6">ES6</a>
+      <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
+      <a class="et-hero-tab" href="#tab-react">React</a>
+      <a class="et-hero-tab" href="#tab-angular">Angular</a>
+      <a class="et-hero-tab" href="#tab-other">Other</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
 	<div class="logo-bottom">
-		<div>
+		<div id="tab-es6">
 			<p class="logo-bottom-p">Разработка и поддержка</p>
 			<p class="logo-bottom-p-2" style="font-size: 24px;">Создаю сайты <u>быстро</u>, а также <u>дешево</u>.</p>
 			<div class="buttons">
@@ -35,7 +43,7 @@
 				<img id="iso" src="iso3.png" alt="ERROR" width="500px" height="500px">
 		</div>
 	</div>
-	<div class="services">
+	<div class="services" id="tab-flexbox">
 		<p class="service-text">Мои проекты</p>
 		<div class="service-images">
 			<div class="simage">
@@ -64,7 +72,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="forma">
+	<div class="forma" id="tab-react">
 		<p class="name">Обсудим Ваш проект?</p>
 		<!-- <p>Оставьте заявку, я свяжусь с вами</p>
 		<input type="text" size="20">
@@ -76,6 +84,10 @@
 			<div><i class="fab fa-instagram"></i></div>
 			<div><i class="fab fa-telegram-plane"></i></div>
 		</div>
+	</div>
+	<div class="diplom" id="tab-angular">
+		<p class="diplom-name">Диплом об успешном окончании дополнительных курсов</p>
+		<a href="https://itproger.com/view-diplom/24287206b0eabb3c28bd4c9bcc3664b1/python" target="_blank"><img src="diplom1.png" alt="ERROR" width="800px" height="600px"></a>
 	</div>
 </body>
 </html>

@@ -1,16 +1,85 @@
 * {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 header {
     font-weight: 300;
     background: #fbfbfb;
-    width: 100%;
+    width: 96.9%;
     padding:25px;
     display: -webkit-inline-flex;
     display: inline-flex;
+}
+
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+    &--top {
+        position: fixed;
+        top: 0;
+    }
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+        transition: all 0.5s ease;
+        font-size: 0.8rem;
+      &:hover {
+            color:white;
+      background: rgba(102,177,241,0.8);
+            transition: all 0.5s ease;
+    }
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+    .et-hero-tabs,
+    .et-slide {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    }
+    .et-hero-tab {
+        font-size: 1rem;
+    }
 }
 
 .logo {
@@ -152,7 +221,7 @@ header > div {
     padding: 15px;
     background: #fbfbfb;
     height: 110px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 5px 5px;
 }
 
 .back > a {
@@ -176,7 +245,7 @@ header > div {
 }
 
 .simage > img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .simage-name {
@@ -197,6 +266,7 @@ body {
 
 .forma {
     margin: 50px 0 0 200px;
+    height: 200px;  
 }
 
 .name {
@@ -225,4 +295,17 @@ body {
 
 .soc div:hover {
   transform: translateY(-10px);
+}
+
+.diplom {
+    background: #fbfbfb;
+}
+
+.diplom-name {
+    margin: 50px 0 0 200px;
+}
+
+.diplom > a {
+    border: 2px solid;
+    margin: 50px 0 0 200px;
 }
