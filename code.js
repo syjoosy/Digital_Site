@@ -1,3 +1,4 @@
+console.log("123")
 class StickyNavigation {
     
     constructor() {
@@ -72,4 +73,4 @@ class StickyNavigation {
     
 }
 
-new StickyNavigation();
+new StickyNavigation()

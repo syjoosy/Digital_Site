@@ -3,12 +3,13 @@
 	<meta charset="UTF-8">
 	<title>syjoosy</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
 	<script src="code.js"></script>
 </head>
 <body>
-	<header>
+	<header id="tab-es6">
 		<div class="logo">
 			<div style="margin-left: 20px;"></div>
 			<img src="logo3.png" alt="ERROR" width="80px" height="60px" style="margin: 20px;">
@@ -23,15 +24,15 @@
 		</div>
 	</header>
 	<div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">ES6</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
-      <a class="et-hero-tab" href="#tab-react">React</a>
-      <a class="et-hero-tab" href="#tab-angular">Angular</a>
+      <a class="et-hero-tab" href="#tab-es6">Intro</a>
+      <a class="et-hero-tab" href="#tab-flexbox">Примеры</a>
+      <a class="et-hero-tab" href="#tab-react">Проект</a>
+      <a class="et-hero-tab" href="#tab-angular">Диплом</a>
       <a class="et-hero-tab" href="#tab-other">Other</a>
       <span class="et-hero-tab-slider"></span>
     </div>
 	<div class="logo-bottom">
-		<div id="tab-es6">
+		<div>
 			<p class="logo-bottom-p">Разработка и поддержка</p>
 			<p class="logo-bottom-p-2" style="font-size: 24px;">Создаю сайты <u>быстро</u>, а также <u>дешево</u>.</p>
 			<div class="buttons">
@@ -40,6 +41,7 @@
 			</div>
 		</div>
 		<div id="xy">
+
 				<img id="iso" src="iso3.png" alt="ERROR" width="500px" height="500px">
 		</div>
 	</div>
@@ -62,17 +64,21 @@
 						<a href="https://syjoosy.github.io/washoo/" target="_blank">Смотреть проект</a>
 				</div>
 			</div>
+
 				<div class="simage">
 					<img src="sound.png" alt="ERROR" width="480px" height="270px">
 					<div class="back">
 						<p class="simage-name">Sound Burner</p>
 						<p class="simage-text">Одностраничный сайт</p>
+
 						<a href="https://syjoosy.github.io/Sound-Burner/" target="_blank">Смотреть проект</a>
 					</div>
+					<div id="tab-react"></div>
 			</div>
 		</div>
 	</div>
-	<div class="forma" id="tab-react">
+
+	<div class="forma" >
 		<p class="name">Обсудим Ваш проект?</p>
 		<!-- <p>Оставьте заявку, я свяжусь с вами</p>
 		<input type="text" size="20">
