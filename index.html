@@ -4,17 +4,18 @@
 	<meta charset="UTF-8">
 	<title>syjoosy</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
 	<script src="code.js"></script>
 </head>
-<body id="tab-es6">
+<body id="tab-intro">
 	<section class="et-hero-tabs">
 	<div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">Интро</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Примеры</a>
-      <a class="et-hero-tab" href="#tab-react">Проект</a>
-      <a class="et-hero-tab" href="#tab-angular">Диплом</a>
+      <a class="et-hero-tab" href="#tab-intro">Интро</a>
+      <a class="et-hero-tab" href="#tab-projects">Примеры</a>
+      <a class="et-hero-tab" href="#tab-project">Проект</a>
+      <a class="et-hero-tab" href="#tab-diplom">Диплом</a>
       <a class="et-hero-tab" href="#tab-other">Other</a>
       <span class="et-hero-tab-slider"></span>
     </div>
@@ -36,6 +37,7 @@
 	<div class="logo-bottom">
 		<div>
 			<p class="logo-bottom-p">Разработка и поддержка</p>
+			<b id="showScroll"></b>
 			<p class="logo-bottom-p-2" style="font-size: 24px;">Создаю сайты <u>быстро</u>, а также <u>дешево</u>.</p>
 			<div class="buttons">
 				<a href="#" id="calc">Рассчитать стоимость</a>
@@ -46,7 +48,7 @@
 				<img id="iso" src="iso3.png" alt="ERROR" width="500px" height="500px">
 		</div>
 	</div>
-	<div id="tab-flexbox" style="height: 100px;"></div>
+	<div id="tab-projects" style="height: 100px;"></div>
 	<div class="services" >
 		<p class="service-text">Мои проекты</p>
 		<div class="service-images">
@@ -70,7 +72,7 @@
 				<div class="simage">
 					<img src="sound.png" alt="ERROR" width="480px" height="270px">
 					<div class="back">
-						<div id="tab-react"></div>	
+						<div id="tab-project"></div>	
 						<p class="simage-name">Sound Burner</p>
 						<p class="simage-text">Одностраничный сайт</p>
 						
@@ -88,18 +90,21 @@
 		<input type="text" size="20"> -->
 		<p>Напишите мне в любой соц. сети</p>
 		<div class="soc">
-			<a href="https://vk.com/syjoosy" target="_blank"><i class="fab fa-vk"></i></a>
+			<a href="https://vk.com/syjoosy" target="_blank"><div><i class="fab fa-vk"></i></div></a>
 			<a href="https://wa.me/7929594****" target="_blank"><div><i class="fab fa-whatsapp"></i></div></a>
 			<a href="https://www.instagram.com/syjoosy/" target="_blank"><div><i class="fab fa-instagram"></i></div></a>
 			<a href="https://t.me/syjoosy" target="_blank"><div><i class="fab fa-telegram-plane"></i></div></a>
+			<a href="tel:7929594****"><div><i class="fas fa-phone"></i></div></a>
+			<a href="mailto:vadim*****@yandex.ru"><div><i class="far fa-envelope"></i></div></a>
 		</div>
 	</div>
-	<div id="tab-angular"></div>
+	<div id="tab-diplom"></div>
 	<div class="diplom" >
 		<!-- <p class="diplom-name">Диплом об успешном окончании дополнительных курсов</p> -->
-		<a href="https://itproger.com/view-diplom/24287206b0eabb3c28bd4c9bcc3664b1/python" target="_blank"><img src="diplom1.png" alt="ERROR" width="800px" height="600px"></a>
+		<a href="https://itproger.com/view-diplom/24287206b0eabb3c28bd4c9bcc3664b1/python" target="_blank"><img src="diplom1.png" alt="ERROR" width="700px" height="500px"></a>
 		<img src="hand4.png" alt="ERROR" width="200px" height="200px" id="hand">
-		<p>Проходил обучение в <a href="https://itproger.com" target="_blank">онлайн школе</a> по направлению "Python-разработчик". Мои навыки:</p>
+		<div class="diplom-text">
+		<p>Проходил обучение в <a href="https://itproger.com" target="_blank" id="itproger">онлайн школе</a> по направлению "Python-разработчик". <br>Мои навыки:</p>
 		<ul>
 			<li>Знание языка Python</li>
 			<li>Знание языка SQL и работа с ним</li>
@@ -112,6 +117,7 @@
 			<li>Сильные знания в разработке на Django</li>
 			<li>Публикация Django проектов в Интернет</li>
 		</ul>
+		</div>
 	</div>
 </body>
 </html>

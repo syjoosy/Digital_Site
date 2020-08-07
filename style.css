@@ -320,12 +320,6 @@ body {
     margin: 50px 0 0 200px;
 }
 
-/*.forma > input {
-    padding: 5px;
-    border-radius: 15px;
-    margin: 10px 30px 0 0;
-}*/
-
 .forma > .soc > a {
   display: inline-block;
   width: 80px;
@@ -339,6 +333,10 @@ body {
   color: #3b3b3b;
   transition: transform 600ms ease;
 }
+.forma > .soc > a > div > i {
+    margin-top: 23px;
+    font-size: 30px;
+}
 
 .soc a:hover {
   transform: translateY(-10px);
@@ -349,6 +347,7 @@ body {
     height: 800px;
     background: #fbfbfb;
     margin-top: 100px;
+    display: flex;
 }
 
 .diplom-name {
@@ -356,9 +355,42 @@ body {
     margin: 50px 0 0 200px;
 }
 
-.diplom > p, .diplom > ul {
+.diplom > p {
     font-size: 20px;
     text-align: right;
+}
+
+.diplom-text {
+    margin: 40px 240px 0 950px;
+    line-height: 33px; 
+}
+
+.diplom-text > p {
+    margin-top: 50px;
+}
+
+.diplom-text > ul {
+    list-style-type: none; 
+}
+
+.diplom-text > ul > li {
+    counter-increment: step-counter;
+}
+
+.diplom-text > ul > li:before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: #2bc6d8;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.diplom-text > ul > li.active {
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
 }
 
 .diplom > a {
@@ -370,5 +402,12 @@ body {
 #hand {
     position: absolute;
     z-index: 1;
-    margin: 350px 0 0 780px;
+    margin: 310px 0 0 720px;
+    width: 150px;
+    height: 150px;
+}
+
+#itproger {
+    text-decoration: none;
+    color: #2bc6d8;
 }
