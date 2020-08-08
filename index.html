@@ -7,10 +7,31 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
-	<script src="code.js"></script>
+	<script src="script.js"></script>
+	<script>
+      $(window).scroll(function() {
+	  var winHeight = $(window).height();
+	  var docHeight = $(document).height();
+	  var winScrolled = $(window).scrollTop();
+	  var docScrolled = $(document).scrollTop();
+	  var scrollPercent = 100 * winScrolled / (docHeight - winHeight);
+	  $('#main').css('width', scrollPercent + "%");
+	});
+    </script>
 </head>
 <body id="tab-intro">
-	<section class="et-hero-tabs">
+	<div id="main"></div>
+	<article>
+	  <section></section>
+	  <section></section>
+	  <section></section>
+	  <section></section>
+	  <section></section>
+	  <section></section>
+	  <section></section>
+	  <section></section>
+	</article>
+	<!-- <section class="et-hero-tabs">
 	<div class="et-hero-tabs-container">
       <a class="et-hero-tab" href="#tab-intro">Интро</a>
       <a class="et-hero-tab" href="#tab-projects">Примеры</a>
@@ -19,7 +40,8 @@
       <a class="et-hero-tab" href="#tab-other">Other</a>
       <span class="et-hero-tab-slider"></span>
     </div>
-	</section>
+	</section> -->
+
 	<header>
 		<div class="logo">
 			<div style="margin-left: 20px;"></div>
@@ -98,6 +120,9 @@
 			<a href="mailto:vadim*****@yandex.ru"><div><i class="far fa-envelope"></i></div></a>
 		</div>
 	</div>
+
+	
+
 	<div id="tab-diplom"></div>
 	<div class="diplom" >
 		<!-- <p class="diplom-name">Диплом об успешном окончании дополнительных курсов</p> -->

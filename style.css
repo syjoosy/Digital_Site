@@ -15,6 +15,26 @@ header {
     display: inline-flex;
 }
 
+section {
+  height: 1000px;
+}
+
+section:nth-of-type(even) {
+  background-color: #ccc;
+}
+
+section:nth-of-type(odd) {
+  background-color: #ddd;
+}
+
+#main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;  
+  background: linear-gradient(to right, white, red);
+}
+
 body {
         
 }

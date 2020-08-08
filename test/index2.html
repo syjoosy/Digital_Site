@@ -175,7 +175,11 @@
 </body>
  
 </html> -->
-<!DOCTYPE html>
+<!-- <!-- 
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 	<script>
@@ -197,5 +201,161 @@ document.onscroll = function (event)
   Горизонтальная: <span id="xscroll">0</span>
 </div>
 </body>
-</html>
+</html> -->
 
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+  var $bg_blue = $('.bg-blue');
+  var bg_state = null;
+  var scroll_orange = 20;
+  var scroll_blue = 420;
+
+  $(window).scroll(function() {
+    var scroll_current = $(this).scrollTop();
+    if (scroll_current < scroll_orange) {
+      if (bg_state != 'orange') {
+        bg_state = 'orange';
+        $bg_blue.stop().animate({
+          opacity: 0
+        });
+      }
+    } else if (scroll_current > scroll_blue) {
+      if (bg_state != 'blue') {
+        bg_state = 'blue';
+        $bg_blue.stop().animate({
+          opacity: 1
+        });
+      }
+    } else {
+      bg_state = null;
+      $bg_blue.stop().animate({
+        opacity: (scroll_current - scroll_orange) / (scroll_blue - scroll_orange)
+      });
+    }
+  });
+    
+});//jQuery
+  </script>
+  <style>
+    .bg, .bg-blue {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+}
+
+.bg {
+  background: orange;
+  z-index: -4; 
+}
+
+.bg-blue {
+  background: blue;
+  z-index: -3; 
+  opacity: 0; 
+}
+  </style>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div class="bg"></div>
+<div class="bg-blue"></div>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+<p>Scrool up and down to change the background.</p>
+</body>
+</html> 
+ -->
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100px;
+}
+
+section:nth-of-type(even) {
+  background-color: #ccc;
+}
+
+section:nth-of-type(odd) {
+  background-color: #ddd;
+}
+
+#main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background: linear-gradient(to right, blue, blue);
+}
+    </style>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+  var winHeight = $(window).height();
+  var docHeight = $(document).height();
+  var winScrolled = $(window).scrollTop();
+  var docScrolled = $(document).scrollTop();
+  var scrollPercent = 100 * winScrolled / (docHeight - winHeight);
+  $('#main').css('width', scrollPercent + "%");
+});
+    </script>
+   <meta charset="UTF-8">
+   <title>Document</title>
+ </head>
+ <body>
+   <div id="main"></div>
+  <article>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+  </article>
+ </body>
+ </html>
