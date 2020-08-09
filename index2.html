@@ -313,8 +313,8 @@ document.onscroll = function (event)
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
-  <script src="script.js"></script>
-  <!-- <script>
+  <!-- <script src="script.js"></script> -->
+  <script>
       $(window).scroll(function() {
     var winHeight = $(window).height();
     var docHeight = $(document).height();
@@ -323,7 +323,78 @@ document.onscroll = function (event)
     var scrollPercent = 100 * winScrolled / (docHeight - winHeight);
     $('#main').css('width', scrollPercent + "%");
   });
-    </script> -->
+    </script>
+
+    <!-- <style>
+      * {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100px;
+}
+
+section:nth-of-type(even) {
+  background-color: #ccc;
+}
+
+section:nth-of-type(odd) {
+  background-color: #ddd;
+}
+
+#main {
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  /*height: 50px;*/
+  background: linear-gradient(to right, #2bc6d8, #2bc6d8);
+}
+
+.forma {
+    background: #2bc6d8;
+    height: 300px;
+    padding: 20px; 
+}
+
+
+.forma > p {
+    font-size: 22px;
+    margin-left: 200px;
+}
+
+.name {
+    margin: 50px 0 0 200px;
+    font-size: 30px;
+}
+
+
+.soc {
+    margin: 50px 0 0 200px;
+}
+
+.forma > .soc > a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid silver;
+  cursor: pointer;
+  color: #3b3b3b;
+  transition: transform 600ms ease;
+}
+.forma > .soc > a > div > i {
+    margin-top: 23px;
+    font-size: 30px;
+}
+
+.soc a:hover {
+  transform: translateY(-10px);
+}
+    </style> -->
     </head>
  <body>
    <div ></div>
@@ -337,20 +408,6 @@ document.onscroll = function (event)
     <section></section>
     <section></section>
   </article>
-  <header>
-    <div class="logo">
-      <div style="margin-left: 20px;"></div>
-      <img src="logo3.png" alt="ERROR" width="80px" height="60px" style="margin: 20px;">
-      <div class="line" style="width: 1px; height: 80px; background-color: black; margin: 15px;"></div>
-      <img src="syjoosy1.png" alt="ERROR" width="200px" height="100px" style="margin-right: 308px;">
-    </div>
-    <div class="info">
-      <p>+7 929 594 ** **</p>
-      <p>v*********@yandex.ru</p>
-      <a href="#">en</a>
-      <a href="#" style="color: #2bc6d8; font-weight: 400;">ru</a>
-    </div>
-  </header>
   <div class="forma" id="main">
     <h6 class="name">Обсудим Ваш проект?</h6>
     <!-- <p>Оставьте заявку, я свяжусь с вами</p>
