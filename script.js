@@ -80,6 +80,6 @@ $(window).scroll(function() {
   var docHeight = $(document).height();
   var winScrolled = $(window).scrollTop();
   var docScrolled = $(document).scrollTop();
-  var scrollPercent = 100 * winScrolled / (docHeight - winHeight);
-  $('#main').css('width', scrollPercent + "%");
+  var scrollPercent = 160 * winScrolled / (docHeight - winHeight);
+  $('#main').css('width', scrollPercent /1.05 + "%");
 });

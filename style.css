@@ -15,7 +15,7 @@ header {
     display: inline-flex;
 }
 
-section {
+/*section {
   height: 100px;
 }
 
@@ -25,7 +25,7 @@ section:nth-of-type(even) {
 
 section:nth-of-type(odd) {
   background-color: #ddd;
-}
+}*/
 
 #main {
   /*position: fixed;*/
@@ -319,6 +319,8 @@ body {
 }
 
 .forma {
+    /*transform: skew(20deg);*/
+    max-width: 97.5%;
     background: #2bc6d8;
     height: 300px;
     padding: 20px; 
