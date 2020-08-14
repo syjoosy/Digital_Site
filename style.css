@@ -73,10 +73,10 @@ a {
 }
 
 .et-hero-tab:hover {
-            color:white;
-      background: #2bc6d8;
-            transition: all 0.7s ease;
-    }
+    color:white;
+    background: #2bc6d8;
+    transition: all 0.7s ease;
+}
 
 .et-hero-tab-slider {
     position: absolute;
@@ -102,11 +102,16 @@ a {
     }
 }
 
+#logo-1 {
+    margin:20px;
+}
+
 .logo {
     width: 50%;
     display: flex;
     flex-direction: row;
-    margin: 0px 0px 0px 10%;
+    margin: 0px 0px 0px 7%;
+
 }
 
 .line {
@@ -142,7 +147,7 @@ header > div {
 .info > * {
     font-size: 20px;
     display: inline-block;
-    /*margin-right: 5%; */
+    margin-right: 5%; 
 }
 
 #ru {
@@ -201,8 +206,6 @@ header > div {
     margin-left: 45%;
 }
 
-
-
 .buttons > a {
     color: #2bc6d8;
     border: 2px solid #2bc6d8;
@@ -247,12 +250,13 @@ header > div {
 }
 
 .service-text {
-  margin: 10% 0 0 10%;
+  
+  margin: 0 0 0 10%;
   font-size: 27px;
 }
 
 #tab-projects {
-    height: 100px;  
+    margin-bottom: 10%;  
 }
 
 .service-images {
@@ -320,6 +324,7 @@ header > div {
 }
 
 .forma {
+    background: #e7eaf2;
     /*transform: skew(20deg);*/
     max-width: 97.5%;
     background: #2bc6d8;
