@@ -6,11 +6,15 @@
     
 }
 
+.background {
+    background: #fbfbfb;
+}
+
 header {
     margin-top: 7%;
     font-weight: 300;
     background: #fbfbfb;
-    width: 100%;
+    width: 97%;
     /*padding:25px;*/
     display: -webkit-inline-flex;
     display: inline-flex;
@@ -23,8 +27,8 @@ header {
 
 body {
     /*padding: 5%;*/
-    background: #fbfbfb;
-    /*background: #e7eaf2;        */
+    /*background: #fbfbfb;*/
+    background: #e7eaf2;        
 }
 
 a {
@@ -166,17 +170,25 @@ header > div {
 }
 
 .logo-bottom {
-    width: 100%;
+    width: 97%;
     background: #fbfbfb;
     display: -webkit-inline-flex;
     display: inline-flex;
+    /*margin-left: 10%;*/
+}
+
+.logo-bottom-text {
     margin-left: 10%;
 }
 
-.logo-bottom > div  {
+/*.logo-bottom > div  {
     display: inline-block;
-}
+}*/
 
+#iso {
+    width:500px; 
+    height:500px;
+}
 
 #iso:hover {
     transform: scale(1.1);
@@ -245,44 +257,48 @@ header > div {
     color: #2bc6d8;
 }
 
+#tab-projects {
+    margin-bottom: 5%;  
+}
+
 .services {
+    /*margin-top: 10%;*/
+    width: 100%;
     background: #e7eaf2;
 }
 
 .service-text {
-  
-  margin: 0 0 0 10%;
+  margin: 0 0 3% 10%;
   font-size: 27px;
-}
-
-#tab-projects {
-    margin-bottom: 10%;  
 }
 
 .service-images {
     display: -webkit-inline-flex;
     display: inline-flex;
     flex-flow: row wrap;
-    margin-left: 50px;
-    padding: 20px;
+    margin-left: 0%;
+    padding: 2%;
     vertical-align: top;
     clear: both;
 }
 
-.break {
+/*.break {
   flex-basis: 100%;
   height: 0;
-}
+}*/
 
 .service-images > div {
-    margin: 0 20px 50px 130px;
+    margin: 0 0 5% 10%;
     display: inline-block;
 }
+
 .service-images > div > p {
 
 }
+
 .back {
-    padding: 15px;
+    margin-top: -1%;
+    padding: 3%;
     background: #fbfbfb;
     height: 110px;
     border-radius: 0 0 5px 5px;
@@ -320,18 +336,21 @@ header > div {
 .simage-text {
     font-size: 22px; 
     font-weight: 400; 
-    margin-bottom: 20px;
+    margin-bottom: 4%;
 }
 
 .forma {
     background: #e7eaf2;
-    /*transform: skew(20deg);*/
-    max-width: 97.5%;
+    transform: skew(-20deg);
+    max-width: 93.5%;
     background: #2bc6d8;
     height: 300px;
     padding: 20px; 
 }
 
+.forma > * {
+    transform: skew(20deg);
+}
 
 .forma > p {
     font-size: 22px;
