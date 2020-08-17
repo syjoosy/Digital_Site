@@ -132,10 +132,10 @@ a {
     text-decoration: none;
     font-size: 18px;
 }
-
+/*
 header > div {
     display: table-cell;
-}
+}*/
 
 .line {
     margin-top: 10px;
@@ -186,7 +186,12 @@ header > div {
     display: inline-block;
 }*/
 
+/*#xy {
+    max-width: 50%; 
+}*/
+
 #iso {
+    /*margin-left: 40%;*/
     width:500px; 
     height:500px;
 }
@@ -380,6 +385,10 @@ header > div {
     width: 10%;
     background: #2bc6d8;
     /*background: red;*/
+}
+
+.trio.green {
+    background:#2bc6d8;
 }
 
 #trio-2 {
