@@ -16,8 +16,10 @@ header {
     background: #fbfbfb;
     width: 97%;
     /*padding:25px;*/
-    display: -webkit-inline-flex;
-    display: inline-flex;
+   /* display: -webkit-inline-flex;
+    display: inline-flex;*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
 }
 
 body {
@@ -66,7 +68,7 @@ h1 {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 70px;
+    height: 10%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #fff;
     z-index: 10;
@@ -91,7 +93,7 @@ h1 {
 
 .et-hero-tab:hover {
             color:white;
-      background: rgba(102,177,241,0.8);
+      background: #2bc6d8;
             transition: all 0.5s ease;
     }
 
@@ -118,24 +120,24 @@ h1 {
         font-size: 1rem;
     }
 }
-#logo-1 {
+/*#logo-1 {
     margin:20px;
-}
+}*/
 
 .logo {
     /*width: 50%;*/
-    display: flex;
-    flex-direction: row;
-    margin: 0px 0px 0px 7%;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    margin: 0 0px 0px 7%;
 
 }
 
-.line {
+/*.line {
     width: 1px; 
     height: 100px; 
     background-color: black; 
     margin: 15px;
-}
+}*/
 
 .logo > * {
     margin-right: 5%;
@@ -147,25 +149,32 @@ h1 {
     
 }
 
-#logo-2 {
+/*#logo-2 {
     margin-top: -1.5%;
-}
+}*/
 
 #logo-3 {
-/*    margin-right: 150%;
-*/}
+    margin-top: 4%;
+    max-width: 30%;
+    height: auto;
+} 
+
+/*.logo-img {
+    width: 100%;
+}*/
 
 /*
 header > div {
     display: table-cell;
 }*/
 
-.line {
+/*.line {
     margin-top: 10px;
-}
+}*/
 
 .info {
-    margin-top: 2%;
+    float: right;
+    margin: 6% 10% 0 0;
     text-align: center;
 }
 
@@ -216,9 +225,9 @@ header > div {
 #iso {
     /*margin-left: 90%;*/
     float: right;
-    margin-right: 10%;
-    width:500px; 
-    height:500px;
+    margin: 2% 10% 10% 0;
+    max-width: 40%; 
+    height: auto;
 }
 
 #iso:hover {
@@ -232,14 +241,14 @@ header > div {
 }
 
 .logo-bottom-p {
-    font-size: 24px;
+    font-size: 170%;
     font-weight: 300;
     margin: 15% 0 2% 0;
 }
 
 .logo-bottom-p-2 {
     /*margin-left: 200px;*/
-    font-size: 30px;
+    font-size: 200%;
 }
 
 .buttons {
@@ -249,9 +258,9 @@ header > div {
 .buttons > a {
     color: #2bc6d8;
     border: 2px solid #2bc6d8;
-    border-radius: 20px;
+    border-radius: 50px;
     text-decoration: none;
-    padding: 10px;
+    padding: 1%;
     margin-right: 15px;
 }
 
@@ -298,7 +307,7 @@ header > div {
 
 .service-text {
   margin: 0 0 3% 10%;
-  font-size: 27px;
+  font-size: 200%;
 }
 
 .service-images {
@@ -306,7 +315,7 @@ header > div {
     display: inline-flex;
     flex-flow: row wrap;
     margin-left: 0%;
-    padding: 2%;
+    padding: 0%;
     vertical-align: top;
     clear: both;
 }
@@ -321,15 +330,15 @@ header > div {
     display: inline-block;
 }
 
-.service-images > div > p {
+/*.service-images > div > p {
 
 }
-
+*/
 .back {
     margin-top: -1%;
     padding: 3%;
     background: #fbfbfb;
-    height: 110px;
+    height: 22%;
     border-radius: 0 0 5px 5px;
 }
 
