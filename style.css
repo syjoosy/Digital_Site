@@ -493,7 +493,7 @@ header > div {
 }
 
 .diplom > p {
-    font-size: 20px;
+    /*font-size: 380%;*/
     text-align: right;
 }
 
@@ -503,6 +503,7 @@ header > div {
 }
 
 .diplom-text > p {
+    font-size: 100%;
     margin-top: 10%;
 }
 
@@ -511,6 +512,7 @@ header > div {
 }
 
 .diplom-text > ul > li {
+    font-size: 100%;
     counter-increment: step-counter;
 }
 
