@@ -8,10 +8,11 @@
 
 .background {
     background: #fbfbfb;
+    /*background: red;*/
 }
 
 header {
-    margin-top: 5%;
+    /*margin-top: 5%;*/
     font-weight: 300;
     background: #fbfbfb;
     width: 97%;
@@ -153,8 +154,12 @@ h1 {
     margin-top: -1.5%;
 }*/
 
+.margin {
+    height: 80px;
+}
+
 #logo-3 {
-    margin-top: 4%;
+    margin: 4% 0px 0px 7%;;
     max-width: 30%;
     height: auto;
 } 
@@ -174,7 +179,7 @@ header > div {
 
 .info {
     float: right;
-    margin: 6% 10% 0 0;
+    margin: 7% 10% 0 0;
     text-align: center;
 }
 
@@ -499,11 +504,11 @@ header > div {
 
 .diplom-text {
     margin: 2% 18% 0 57%;
-    line-height: 180%; 
+    line-height: calc(0.1em + 2vw);
 }
 
 .diplom-text > p {
-    font-size: 100%;
+    font-size: calc(0.1em + 0.8vw);
     margin-top: 10%;
 }
 
@@ -512,10 +517,15 @@ header > div {
 }
 
 .diplom-text > ul > li {
-    font-size: 100%;
+    /*font-size: 80%;*/
+    font-size: calc(0.1em + 0.8vw);
     counter-increment: step-counter;
 }
 
+/*.ul-li > ul > li{
+    display: inline-block;
+}
+*/
 .diplom-text > ul > li:before {
     content: counter(step-counter);
     margin-right: 5px;
@@ -570,3 +580,9 @@ header > div {
     text-decoration: none;
     color: #2bc6d8;
 }
+
+/*@media (min-width: 480px) and (max-width: 1024px) {
+  body {
+    font-size: calc(14px + (18 - 14) * ( (100vw - 480px) / ( 1024 - 480) ));
+  }
+}*/
