@@ -354,16 +354,18 @@ header > div {
     margin-top: -1%;
     padding: 3%;
     background: #fbfbfb;
-    height: 22%;
+    /*height: 22%;*/
+    /*height: calc(1em + 8vw);*/
     border-radius: 0 0 5px 5px;
 }
 
 .back > a {
     color: #2bc6d8;
     border: 2px solid #2bc6d8;
-    border-radius: 20px;
+    border-radius: 50px;
     text-decoration: none;
-    padding: 10px;
+    padding: calc(0.5em + 0.1vw);
+    margin-top: 200px;
 }
 
 .back > a:hover {
@@ -378,19 +380,30 @@ header > div {
     color: #2bc6d8;
 }
 
+.margin-simage {
+    height: calc(1em + 0.5vw);
+}
+
 .simage > img {
     border-radius: 5px 5px 0 0;
 }
 
 .simage-name {
-    font-size: 18px; 
+    font-size: calc(1em + 0.2vw); 
     font-weight: 300;
 }
 
 .simage-text {
-    font-size: 22px; 
+    font-size: calc(1em + 0.5vw); 
     font-weight: 400; 
     margin-bottom: 4%;
+}
+
+.simage-img {
+    /*width:680px; */
+    width: calc(1em + 35vw);
+    /*height:370px;*/
+    height: calc(1em + 20vw);
 }
 
 /*.very-big-forma {
