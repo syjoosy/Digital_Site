@@ -9,6 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
   <script src="script.js"></script>
+  <script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
     </head>
  <body id="body">
   <section class="et-hero-tabs" id="tab-intro">
@@ -41,8 +48,11 @@
       <b id="showScroll"></b>
       <p class="logo-bottom-p-2">Создаю сайты <u>быстро</u>, а также <u>дешево</u>.</p>
       <div class="buttons">
-        <a href="#" id="calc">Рассчитать стоимость</a>
-        <a href="#" id="help">Помощь</a>
+        <!-- <div class="popup" onclick="myFunction()"> -->
+          <!-- <span class="popuptext" id="myPopup">Блок рассчитывания стоимости</span> -->
+          <a href="#" id="calc">Рассчитать стоимость</a>
+          <a href="#" id="help">Помощь</a>
+        <!-- </div>  -->
       </div>
     </div>
   </div>
