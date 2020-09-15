@@ -3,70 +3,6 @@
     font-family: 'Montserrat', sans-serif;    
 }
 
- /* Popup container */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-
-}
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
-    font-size: 30px;
-    visibility: hidden;
-    width: 660px;
-    height: 260px;
-    background-color: #fbfbfb;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin: 150px 0 0 -80px;
-    box-shadow: -5px -5px 128px -28px rgba(0,0,0,0.75);
-}
-
-#myPopup {
-    font-size: 20px;
-    margin-top: 100px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 0.5s;
-    animation: fadeIn 0.5s
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-} 
-
-
-
 
 .background {
     background: #fbfbfb;
@@ -260,7 +196,71 @@ h1 {
     margin: 5% 0 0 0;
 }
 
-.buttons > a {
+
+/* Popup container */
+.popup {
+    position: relative;
+    /*display: inline-block;*/
+    cursor: pointer;
+
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    font-size: 30px;
+    visibility: hidden;
+    width: 660px;
+    height: 260px;
+    background-color: #fbfbfb;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin: 150px 0 0 -80px;
+    box-shadow: -5px -5px 64px -28px rgba(0,0,0,0.75);
+}
+
+#myPopup {
+    font-size: 20px;
+    margin: 30% 0 0 -30%;
+/*    margin: 100px 0 0 -800px;
+*/}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+} 
+
+.popup > a {
     color: #2bc6d8;
     border: 2px solid #2bc6d8;
     border-radius: 50px;
